@@ -26,55 +26,28 @@ $(function () {
   });
 //   owl
 $('.owl-carousel').owlCarousel({
-    loop: true,
-    
-    center: true,
-    nav: true,
-    dots: false,
-    autoplay: false,
-    smartSpeed: 600,
+    loop:true,
+    margin:10,
+    center:true,
+    nav:true,
+    dots:false,
+    autoplay:false,
+    smartSpeed:600,
     navText: [
         '<button class="owl-btn owl-prev-btn">আগে</button>',
         '<button class="owl-btn owl-next-btn">পরে</button>'
     ],
-    responsive: {
-        0: {
-            items: 1,
-            nav: false,
-            center: false // small screen e center off korle better dekha jai
-        },
-        480: {
-            items: 1,
-            nav: false,
-            center: true
-        },
-        576: {
-            items: 1,
-            nav: true,
-            center: true
-        },
-        768: {
-            items: 2,
-            nav: true,
-            center: true
-        },
-        992: {
-            items: 3,
-            nav: true,
-            center: true
-        },
-        1200: {
-            items: 3,
-            nav: true,
-            center: true
-        },
-        1400: {
-            items: 3,
-            nav: true,
-            center: true
-        }
+    responsive:{
+        0: { items:1, center:false, nav:false },
+        480:{ items:1, center:true },
+        576:{ items:1, center:true, nav:true },
+        768:{ items:2 },
+        992:{ items:3 },
+        1200:{ items:4 },
+        1400:{ items:5 }
     }
 });
+
 
 
 

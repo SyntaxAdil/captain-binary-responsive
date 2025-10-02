@@ -1,0 +1,63 @@
+/* nav responsive */
+@media (max-width: 990px) {
+  nav.navbar {
+    background: #0d1224 !important;
+  }
+  nav .nav-logo-img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  .test_carousel .card {
+    height: auto;
+    margin: 15px 10px;
+  }
+  .owl-carousel .active.center {
+    transform: scale(1.03);
+  }
+  .owl-btn {
+    padding: 6px 20px;
+    font-size: 10px;
+    margin: 0 5px;
+  }
+  .test_carousel {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .test_carousel .card {
+    height: auto;
+    margin: 15px 12px;
+  }
+  .owl-carousel .active.center {
+    transform: scale(1.05);
+  }
+  .owl-btn {
+    padding: 7px 25px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .test_carousel .card {
+    height: 400px;
+  }
+  .owl-btn {
+    padding: 8px 28px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .test_carousel .card {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .test_carousel .card {
+    height: 450px;
+  }
+}
