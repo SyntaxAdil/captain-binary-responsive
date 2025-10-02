@@ -38,13 +38,11 @@ $('.owl-carousel').owlCarousel({
         '<button class="owl-btn owl-next-btn">পরে</button>'
     ],
     responsive:{
-        0: { items:1, center:false, nav:false },
-        480:{ items:1, center:true },
-        576:{ items:1, center:true, nav:true },
-        768:{ items:2 },
-        992:{ items:3 },
-        1200:{ items:4 },
-        1400:{ items:5 }
+        0: { items:1, center:false, nav:true, margin:5 },
+        576:{ items:1, center:true, nav:true, margin:8 },
+        768:{ items:3, center:false, margin:10 },
+        992:{ items:3, center:false, margin:10 },
+        1200:{ items:3, center:false, margin:10 }
     }
 });
 

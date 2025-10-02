@@ -6,6 +6,15 @@
   nav .nav-logo-img {
     width: 100px;
   }
+  nav .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-right: 0;
+  }
+  nav .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media (max-width: 575px) {
