@@ -40,9 +40,9 @@ $('.owl-carousel').owlCarousel({
     responsive:{
         0: { items:1, center:false, nav:true, margin:5 },
         576:{ items:1, center:true, nav:true, margin:8 },
-        768:{ items:3, center:false, margin:10 },
-        992:{ items:3, center:false, margin:10 },
-        1200:{ items:3, center:false, margin:10 }
+        768:{ items:3, center:false, margin:10,nav:false },
+        992:{ items:3, center:false, margin:10,nav:false },
+        1200:{ items:3, center:false, margin:10,nav:false }
     }
 });
 
