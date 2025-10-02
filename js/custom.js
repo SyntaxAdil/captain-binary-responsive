@@ -64,12 +64,12 @@ $('.owl-carousel').owlCarousel({
             center: true
         },
         1200: {
-            items: 4,
+            items: 3,
             nav: true,
             center: true
         },
         1400: {
-            items: 5,
+            items: 3,
             nav: true,
             center: true
         }
