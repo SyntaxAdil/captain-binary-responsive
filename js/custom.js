@@ -25,7 +25,7 @@ $(function () {
     }
   });
 //   owl
-$('.owl-carousel').owlCarousel({
+const owl = $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     center:true,
@@ -43,6 +43,36 @@ $('.owl-carousel').owlCarousel({
         768:{ items:3, center:false, margin:10,nav:true },
         992:{ items:3, center:false, margin:10,nav:true },
         1200:{ items:3, center:false, margin:10,nav:true }
+    }
+});
+
+// Hide prev/next buttons on below medium devices when item 1 is showing
+owl.on('changed.owl.carousel', function(event) {
+    const currentItem = event.item.index;
+    const windowWidth = $(window).width();
+
+    // For devices below medium (< 768px)
+    if (windowWidth < 768) {
+        if (currentItem === 0) {
+            $('.owl-prev-btn, .owl-next-btn').hide();
+        } else {
+            $('.owl-prev-btn, .owl-next-btn').show();
+        }
+    }
+});
+
+// Check on page load
+$(window).on('load resize', function() {
+    const windowWidth = $(window).width();
+    if (windowWidth < 768) {
+        const currentItem = owl.find('.owl-item.active').first().index();
+        if (currentItem === 0) {
+            $('.owl-prev-btn, .owl-next-btn').hide();
+        } else {
+            $('.owl-prev-btn, .owl-next-btn').show();
+        }
+    } else {
+        $('.owl-prev-btn, .owl-next-btn').show();
     }
 });
 
